@@ -1,0 +1,30 @@
+#searchinput {
+    width: 200px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+#form {
+    border: 2px solid #C1C1C1;
+    border-radius: 10px ;
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    padding-top:30px;
+}
+
+h2 {
+    padding-top:30px;
+}
