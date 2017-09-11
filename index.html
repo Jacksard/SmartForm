@@ -13,7 +13,7 @@
     <script src="js/angular.min.js"></script>  
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
-    
+    <script src="js/data.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +39,7 @@
     </div>
 
 <ul class="list-group">  
-        <li class="list-group-item" ng-hide="(!searchPerson)" ng-repeat="person in collection | filter: searchPerson">
+        <li class="list-group-item" ng-hide="(!searchPerson.first_name && !searchPerson.last_name && !searchPerson.age)" ng-repeat="person in collection | filter: searchPerson">
         <button class="fill animated bounceInDown scroll" ng-click="fillForm(person)">{{person.first_name + ' ' + person.last_name + ', Age: '+ person.age + ', Email: ' + person.email}}</button>
         </li>   
 </ul> 
